@@ -32,6 +32,8 @@ final class MainsViewController: UIViewController {
         profileFetchButton.layer.masksToBounds = true
         profileFetchButton.backgroundColor = .systemPink
         
+        countLabel.adjustsFontSizeToFitWidth = true
+        
         countLabel.text = String(num)
     }
     

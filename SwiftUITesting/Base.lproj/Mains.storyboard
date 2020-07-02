@@ -49,10 +49,10 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRY-WA-JCc">
-                                <rect key="frame" x="157" y="331" width="100" height="50"/>
+                                <rect key="frame" x="82" y="331" width="250" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="aWt-oj-rFG"/>
-                                    <constraint firstAttribute="width" constant="100" id="yUi-de-DdP"/>
+                                    <constraint firstAttribute="width" constant="250" id="yUi-de-DdP"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <nil key="textColor"/>
