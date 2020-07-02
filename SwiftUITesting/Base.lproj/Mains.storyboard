@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mains View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainsViewController" customModule="SwiftUITesting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dli-ZI-4V7">
+                                <rect key="frame" x="107" y="84" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="WhP-gI-KkJ"/>
+                                    <constraint firstAttribute="height" constant="200" id="xLS-DN-XGr"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oOd-2s-aEk">
+                                <rect key="frame" x="132" y="416" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mrn-fv-bNQ"/>
+                                    <constraint firstAttribute="width" constant="150" id="ylp-0k-SMc"/>
+                                </constraints>
+                                <state key="normal" title="count up">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="TapCountUpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dN0-zA-54R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LRx-BT-dEP">
+                                <rect key="frame" x="132" y="496" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Hb1-hA-ElW"/>
+                                    <constraint firstAttribute="width" constant="150" id="VCg-5o-Ac5"/>
+                                </constraints>
+                                <state key="normal" title="fetch">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="TapProfileFetchButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVM-7U-LG8"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRY-WA-JCc">
+                                <rect key="frame" x="157" y="331" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="aWt-oj-rFG"/>
+                                    <constraint firstAttribute="width" constant="100" id="yUi-de-DdP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dli-ZI-4V7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="AoO-kg-hIR"/>
+                            <constraint firstItem="qRY-WA-JCc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ecw-To-Cxy"/>
+                            <constraint firstItem="oOd-2s-aEk" firstAttribute="top" secondItem="qRY-WA-JCc" secondAttribute="bottom" constant="35" id="HL8-ni-Vhj"/>
+                            <constraint firstItem="qRY-WA-JCc" firstAttribute="top" secondItem="Dli-ZI-4V7" secondAttribute="bottom" constant="47" id="KHr-AR-Qah"/>
+                            <constraint firstItem="LRx-BT-dEP" firstAttribute="top" secondItem="oOd-2s-aEk" secondAttribute="bottom" constant="30" id="NAT-g6-9qI"/>
+                            <constraint firstItem="LRx-BT-dEP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gXv-bR-nnk"/>
+                            <constraint firstItem="oOd-2s-aEk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oMU-Lp-Xzx"/>
+                            <constraint firstItem="Dli-ZI-4V7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="puv-Bc-ZC7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="countLabel" destination="qRY-WA-JCc" id="t76-hw-kEb"/>
+                        <outlet property="countUpButton" destination="oOd-2s-aEk" id="gSK-vL-Wbk"/>
+                        <outlet property="profileFetchButton" destination="LRx-BT-dEP" id="GBd-yb-k3u"/>
+                        <outlet property="profileImageView" destination="Dli-ZI-4V7" id="1fs-rm-aS1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
